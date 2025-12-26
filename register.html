@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-orange-500 text-white px-6 py-3 flex justify-between">
+      <div class="text-xl">ระบบสมาชิก</div>
+      <div
+        class="flex flex-col items-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-3 text-black/60 "
+      >
+        <a href="index.html" class="hover:text-white transition duration-200">หน้าหลัก</a>
+        <a href="" class="hover:text-white transition duration-200 text-white">ลงทะเบียน</a>
+        <a href="" class="hover:text-white transition duration-200">โปรไฟล์</a>
+        <a href="" class="hover:text-white transition duration-200">แก้ไขข้อมูล</a>
+      </div>
+    </nav>
+
+    <form class="max-w-4xl mx-auto my-10 bg-white rounded-lg shadow">
+      <nav class="px-5 py-1 bg-orange-500 text-white text-2xl rounded-t-lg">
+        ลงทะเบียนสมาชิก
+      </nav>
+      <div class="px-5 py-2">
+        <div class="mb-5">
+          <label class="block mb-2">
+            รูปภาพโปรไฟล์ <span class="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            class="block w-full file:mr-4 file:py-1 file:px-2 file:rounded-lg file:bg-gray-100 file:border-r file:border-gray-300 border border-gray-200 rounded-lg shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="file"
+            name="file"
+            accept="image/*"
+            required
+          />
+        </div>
+
+        <div class="mb-5">
+          <label class="block mb-2">
+            ชื่อ <span class="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            class="block w-full border border-gray-200 rounded-lg px-2 py-1 shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="text"
+            name="fname"
+            required
+          />
+        </div>
+
+        <div class="mb-5">
+          <label class="block mb-2">
+            นามสกุล <span class="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            class="block w-full border border-gray-200 rounded-lg px-2 py-1 shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="text"
+            name="lname"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label class="block mb-2">
+            อีเมล <span class="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            class="block w-full border border-gray-200 rounded-lg px-2 py-1 shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label class="block mb-2">
+            เบอร์โทร <span class="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            class="block w-full border border-gray-200 rounded-lg px-2 py-1 shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="tel"
+            name="tel"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label class="block mb-2">
+            วันเกิด <span class="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            class="block w-full border border-gray-200 rounded-lg px-2 py-1 shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="date"
+            name="birthday"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label class="block mb-2">
+            เพศ <span class="text-red-500 ml-1">*</span>
+          </label>
+          <select
+            name="gender"
+            id=""
+            class="block w-full border border-gray-200 rounded-lg px-2 py-1 shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            required
+          >
+            <option value="" disabled selected>เลือกเพศ</option>
+            <option value="M">ชาย</option>
+            <option value="F">หญิง</option>
+            <option value="other">อื่นๆ</option>
+          </select>
+        </div>
+        <div class="mb-5">
+          <label class="block mb-2">
+            ที่อยู่ <span class="text-red-500 ml-1">*</span>
+          </label>
+          <textarea
+            class="block w-full border border-gray-200 p-3 rounded-lg shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            name=""
+            id=""
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-5">
+          <label class="block mb-2">
+            รหัสผ่าน <span class="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            class="block w-full border border-gray-200 rounded-lg px-2 py-1 shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label class="block mb-2">
+            ยืนยันรหัสผ่าน <span class="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            class="block w-full border border-gray-200 rounded-lg px-2 py-1 shadow focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="password"
+            name="confirm_password"
+            required
+          />
+        </div>
+
+        <footer class="flex justify-end space-x-2 mb-3">
+          <button
+            class="bg-gray-500 text-white text-xl px-2 py-1 rounded-lg shadow hover:bg-gray-300 transition focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="button"
+          >
+            ยกเลิก
+          </button>
+          <button
+            class="bg-orange-500 text-white text-xl px-2 py-1 rounded-lg shadow hover:bg-orange-300 transition focus:outline-none focus:ring-1 focus:ring-orange-500"
+            type="submit"
+          >
+            ลงทะเบียน
+          </button>
+        </footer>
+      </div>
+    </form>
+  </body>
+</html>
