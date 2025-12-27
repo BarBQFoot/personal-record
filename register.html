@@ -6,7 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-gray-100">
+  <body
+    class="inset-0 -z-10 min-h-screen overflow-y-auto"
+    style="
+      background: linear-gradient(
+        135deg,
+        #ffcfa7 0%,
+        #f8d7da 25%,
+        #e8f5e8 75%,
+        #b8f2d0 100%
+      );
+    "
+  >
     <nav class="bg-orange-500 text-white px-6 py-3 flex justify-between">
       <div class="text-xl">ระบบสมาชิก</div>
       <div
@@ -31,7 +42,9 @@
       </div>
     </nav>
 
-    <form class="max-w-4xl mx-auto my-10 bg-white rounded-lg shadow-lg">
+    <form
+      class="max-w-4xl mx-auto my-10 backdrop-blur-lg bg-white/30 rounded-lg shadow-lg"
+    >
       <nav class="px-5 py-1 bg-orange-500 text-white text-2xl rounded-t-lg">
         ลงทะเบียนสมาชิก
       </nav>

@@ -6,7 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-gray-100">
+  <body
+    class="inset-0 -z-10 min-h-screen overflow-y-auto"
+    style="
+      background: linear-gradient(
+        135deg,
+        #ffcfa7 0%,
+        #f8d7da 25%,
+        #e8f5e8 75%,
+        #b8f2d0 100%
+      );
+    "
+  >
     <nav class="bg-orange-500 text-white px-6 py-3 flex justify-between">
       <div class="text-xl">ระบบสมาชิก</div>
       <div
@@ -23,13 +34,15 @@
           class="hover:text-white transition duration-200 text-white"
           >โปรไฟล์</a
         >
-        <a href="edit_profile.html" class="hover:text-white transition duration-200"
+        <a
+          href="edit_profile.html"
+          class="hover:text-white transition duration-200"
           >แก้ไขข้อมูล</a
         >
       </div>
     </nav>
 
-    <div class="max-w-4xl mx-auto my-10 bg-white rounded-lg shadow-lg">
+    <div class="max-w-4xl mx-auto my-10 bg-white/30 rounded-lg shadow-lg">
       <nav class="bg-orange-500 pb-5 rounded-t-lg">
         <div class="flex justify-center pt-5 mb-5">
           <img
@@ -91,4 +104,3 @@
     </div>
   </body>
 </html>
-
